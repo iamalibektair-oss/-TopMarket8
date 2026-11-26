@@ -2,6 +2,18 @@ import { motion } from 'motion/react';
 import { ArrowUpRight, ShieldCheck, Timer } from 'lucide-react';
 import { KASPI_URL } from '../data/content';
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
+function trackKaspiClick() {
+  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+    window.fbq('track', 'Lead');
+  }
+}
+
 interface KaspiButtonProps {
   label: string;
   size?: 'sm' | 'md' | 'lg' | 'xl';
@@ -99,6 +111,7 @@ export function KaspiButton({
       href={KASPI_URL}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={trackKaspiClick}
       whileHover={{ y: -2, scale: 1.015 }}
       whileTap={{ scale: 0.985 }}
       transition={{ type: 'spring', stiffness: 420, damping: 24 }}

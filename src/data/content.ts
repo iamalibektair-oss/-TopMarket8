@@ -1,4 +1,4 @@
-export const KASPI_URL = 'https://kaspi.kz';
+export const KASPI_URL = 'https://ks86lywq.mobz.market/5aq';
 export const INSTAGRAM_URL = 'https://instagram.com/top_market_8';
 
 export type Locale = 'ru' | 'kk';

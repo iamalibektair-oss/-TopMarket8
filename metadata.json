@@ -1,0 +1,6 @@
+{
+  "name": "TopMarket8 — Сыворотка для роста и укрепления волос с 3D-роллером",
+  "description": "Двуязычный лендинг (РУС / ҚАЗ) магазина TopMarket8 для сыворотки от выпадения и для роста волос с охлаждающим 3D-роллером 360° и сертификатом NMPA № 202410635 на Kaspi.kz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
